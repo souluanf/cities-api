@@ -8,7 +8,6 @@ import static org.mockito.BDDMockito.given;
 import dev.luanfernandes.cities.entities.City;
 import dev.luanfernandes.cities.repositories.CityRepository;
 import java.util.Arrays;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

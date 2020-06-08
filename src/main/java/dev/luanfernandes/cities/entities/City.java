@@ -13,7 +13,7 @@ import org.springframework.data.geo.Point;
 @Entity
 @Table(name = "cidade")
 @TypeDefs(value = {
-    @TypeDef(name = "point", typeClass = PointType.class)
+        @TypeDef(name = "point", typeClass = PointType.class)
 })
 public class City {
 
@@ -39,15 +39,6 @@ public class City {
   public City() {
   }
 
-  /**
-   *
-   * @param id
-   * @param name
-   * @param uf
-   * @param ibge
-   * @param geolocation
-   * @param location
-   */
   public City(final Long id, final String name, final Integer uf, final Integer ibge,
               final String geolocation, final Point location) {
     this.id = id;

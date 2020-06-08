@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 public interface CityRepository extends JpaRepository<City, Long> {
 
   String QUERY = "SELECT ((SELECT lat_lon FROM cidade WHERE id=?1) <@> "
-      + "(SELECT lat_lon FROM cidade WHERE id=?2)) as distance";
+          + "(SELECT lat_lon FROM cidade WHERE id=?2)) as distance";
 
   @Query(value = QUERY, nativeQuery = true)
   Double distanceByPoints(final Long cityId1, final Long cityId2);

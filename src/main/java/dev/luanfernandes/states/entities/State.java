@@ -1,7 +1,7 @@
 package dev.luanfernandes.states.entities;
 
-import dev.luanfernandes.countries.entities.Country;
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
+import dev.luanfernandes.countries.entities.Country;
 import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -11,7 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
@@ -19,7 +18,7 @@ import org.hibernate.annotations.TypeDefs;
 @Entity(name = "State")
 @Table(name = "estado")
 @TypeDefs({
-    @TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
+        @TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
 })
 public class State {
 
@@ -51,7 +50,6 @@ public class State {
   }
 
   /**
-   *
    * @param id
    * @param name
    * @param uf

@@ -3,7 +3,6 @@ package dev.luanfernandes.countries.resources;
 import dev.luanfernandes.countries.entities.Country;
 import dev.luanfernandes.countries.repositories.CountryRepository;
 import java.util.List;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
